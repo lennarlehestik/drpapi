@@ -6,7 +6,10 @@ const cors = require('cors');
 
 
 const app = express();
-app.use(cors()); // Enables All CORS Requests
+app.use(  cors({
+  origin: ['http://localhost:3000',
+          'https://https://disputeresolutionproject.web.app/']
+}));
 
 const storage = multer.memoryStorage(); // Store the file in memory
 const upload = multer({ storage: storage });
