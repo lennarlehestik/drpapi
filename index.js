@@ -8,7 +8,8 @@ const cors = require('cors');
 const app = express();
 app.use(cors({
   origin: ['http://localhost:3000',
-          'https://disputeresolutionproject.web.app']
+          'https://disputeresolutionproject.web.app',
+        'https://daodrp.com']
 }));
 
 const storage = multer.memoryStorage(); // Store the file in memory
