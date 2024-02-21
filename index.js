@@ -30,8 +30,8 @@ app.post('/upload', upload.single('file'), async (req, res) => {
       const response = await axios.post(url, form, {
         headers: {
           ...form.getHeaders(), // This will set the proper 'Content-Type' header with the correct 'boundary'
-          'pinata_api_key': '43a8ad88c336c77d9db6',
-          'pinata_secret_api_key': '1c3b9fa2b230acc5c78fa91b06e1222606d1e831d09b4064a81a887046be91da',
+          'pinata_api_key': 'INESRT KEY',
+          'pinata_secret_api_key': 'INSERT KEY',
         },
       });
       
